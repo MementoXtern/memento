@@ -7,5 +7,6 @@
             $('#calendar').fullCalendar({});
         });
     </script>
+    <button type="button" class="btn btn-primary" id="manageInvBtn">Manage Inventory</button>
     <div id="calendar"></div>
 </asp:Content>

@@ -151,6 +151,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Vendor_home.aspx" />
+    <Content Include="Manage_inventory.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Architecture\FormValidation.cs" />
@@ -181,6 +182,13 @@
     </Compile>
     <Compile Include="Vendor_home.aspx.designer.cs">
       <DependentUpon>Vendor_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_inventory.aspx.cs">
+      <DependentUpon>Manage_inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage_inventory.aspx.designer.cs">
+      <DependentUpon>Manage_inventory.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -217,7 +225,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>53005</DevelopmentServerPort>
+          <DevelopmentServerPort>56688</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
