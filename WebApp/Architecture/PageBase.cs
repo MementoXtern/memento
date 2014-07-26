@@ -44,7 +44,6 @@ namespace WebApp.Architecture
 
         public int? PageId { get; set; }
 
-
         public bool IsDebug
         {
             get { return true; }
