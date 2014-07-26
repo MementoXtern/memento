@@ -176,7 +176,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="hr\" />
     <Folder Include="Scripts\" />
+    <Folder Include="vendor\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Site.Master" />

@@ -22,12 +22,16 @@
             <div class="loginDisplay">
             </div>
             <div class="clear hideSkiplink">
-                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
-                    IncludeStyleBlock="false" Orientation="Horizontal">
-                    <Items>
-                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
-                    </Items>
-                </asp:Menu>
+                <div class="menu" id="NavigationMenu" style="float: left;">
+                    <ul class="level1 static"style="position: relative; width: auto; float: left; height: 30px;">
+                        <% for (int i = 0; i < _menuItems.Count; i++)
+                           { %>
+                                <li role="menuitem" class="static" style="position: relative; float: left; margin: 0 5px;"><a class="level1 static" href="<%= _menuItems[i].Url %>" tabindex="-1"><%= _menuItems[i].Name %></a></li>
+                        <% } %>
+                    </ul>
+                </div>
+                <div style="clear: left;">
+                </div>
             </div>
         </div>
         <div class="main">
