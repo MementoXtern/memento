@@ -1,0 +1,73 @@
+﻿body{
+    background: url('/Assets/login_bg.jpg');
+}
+.header .title {
+    display: inline-block;
+}
+.header .title h1 {
+    color: white;
+    font-family: Garamond;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px gray;
+}
+.header .clear {
+    display: none;
+}
+.header .logo {
+    width: 46px;
+    height: 50px;
+    display: inline-block;
+    background-color: white;
+    margin: 10px;
+}
+.header .logo .logo-let {
+    width: 43px;
+    height: 40px;
+    text-align: center;
+    background: #359;
+    margin: 2px auto;
+    color: #fe7;
+    font-size: 38px;
+    line-height: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-shadow: 0px 1px 1px black;
+}
+.main {
+    width: 75%;
+    max-width: 600px;
+    margin: 120px auto;
+    box-shadow: 1px 2px 2px black;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+}
+.main h2.title {
+    color: white;
+    font-size: 40px;
+    text-shadow: 0px 1px 1px #666;
+    font-family: Calibri, Garamond;
+}
+.main p {
+    padding: 10px;
+}
+.main p.intro_desc {
+    color: #eee;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-shadow: 0px 1px 1px #444;
+}
+.main .inputs {
+    text-align: center;
+}
+.main .inputs input {
+    padding: 10px 20px;
+    min-width: 45%;
+    background-color: #136;
+    border: none;
+    color: white;
+    box-shadow: 1px 1px 1px black;
+    margin: 0px 10px;
+}
+
+    
