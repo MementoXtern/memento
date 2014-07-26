@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{62D948A3-6FAA-40DA-B5F4-F8FEF3F18E83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib", "Lib\Lib.csproj", "{26172F3D-9354-4EFE-A873-8E5E495FD6AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62D948A3-6FAA-40DA-B5F4-F8FEF3F18E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D948A3-6FAA-40DA-B5F4-F8FEF3F18E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D948A3-6FAA-40DA-B5F4-F8FEF3F18E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D948A3-6FAA-40DA-B5F4-F8FEF3F18E83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26172F3D-9354-4EFE-A873-8E5E495FD6AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26172F3D-9354-4EFE-A873-8E5E495FD6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26172F3D-9354-4EFE-A873-8E5E495FD6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26172F3D-9354-4EFE-A873-8E5E495FD6AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

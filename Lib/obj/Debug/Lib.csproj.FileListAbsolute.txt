@@ -1,0 +1,10 @@
+C:\Users\bporter\Documents\Git\Momento\Lib\bin\Debug\Lib.dll
+C:\Users\bporter\Documents\Git\Momento\Lib\bin\Debug\Lib.pdb
+C:\Users\bporter\Documents\Git\Momento\Lib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bporter\Documents\Git\Momento\Lib\obj\Debug\Lib.dll
+C:\Users\bporter\Documents\Git\Momento\Lib\obj\Debug\Lib.pdb
+C:\Users\bporter\Documents\Git\Lib\bin\Debug\Lib.dll
+C:\Users\bporter\Documents\Git\Lib\bin\Debug\Lib.pdb
+C:\Users\bporter\Documents\Git\Lib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bporter\Documents\Git\Lib\obj\Debug\Lib.dll
+C:\Users\bporter\Documents\Git\Lib\obj\Debug\Lib.pdb
