@@ -14,8 +14,8 @@ namespace Lib.DataObjects
             LoginObject loginObject = null;
 
             //DataTable dt = null;
-            //Query query = new Query();
-            //query.AddParameter("@Email", email);
+            //Query query = new Query("AccountCheckLogin");
+            //query.AddParameter("@Username", email);
             //query.AddParameter("@Password", password);
             //DBManager.Execute(query, ref dt);
 

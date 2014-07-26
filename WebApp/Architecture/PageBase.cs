@@ -21,40 +21,34 @@ namespace WebApp.Architecture
         protected Literal litError;
         protected Literal litMessage;
         protected Literal litWarning;
-        //protected HtmlGenericControl menu;
 
         #endregion
 
         #region Properties
 
-        public int AccessLevel
+        public int? AccountTypeId
         {
             get
             {
-                return Session["AccessLevel"] == null ? 0 : (int)Session["AccessLevel"];
+                return Session["AccountTypeId"] == null ? 0 : (int?)Session["AccountTypeId"];
             }
         }
 
-        public bool EditMode { get; set; }
+        public int? AccountId
+        {
+            get
+            {
+                return Session["AccountId"] == null ? null : (int?)Session["AccountId"];
+            }
+        }
+
+        public int? PageId { get; set; }
+
 
         public bool IsDebug
         {
-            get
-            {
-                return true;
-                //return WebConfigurationManager.AppSettings["Debug"].Equals("true", StringComparison.OrdinalIgnoreCase);
-            }
+            get { return true; }
         }
-
-        public bool IsAdmin
-        {
-            get
-            {
-                return Session["AdminId"] != null;
-            }
-        }
-
-        public int PageId { get; set; }
 
         public bool ProcessPage
         {
@@ -81,7 +75,7 @@ namespace WebApp.Architecture
         {
             litError = (Literal)Master.FindControl("litError");
             litMessage = (Literal)Master.FindControl("litMessage");
-            litWarning = (Literal)Master.FindControl("litWarning");            
+            litWarning = (Literal)Master.FindControl("litWarning");
         }
 
         protected void PageBase_PreRender(object sender, EventArgs e)
@@ -173,7 +167,7 @@ namespace WebApp.Architecture
         {
             bool valid = true;
 
-            if (AccessLevel > 0 && !IsAdmin)
+            if ((!AccountTypeId.HasValue || !AccountId.HasValue) && PageId.HasValue)
             {
                 valid = false;
             }
