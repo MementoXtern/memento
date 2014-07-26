@@ -6,16 +6,16 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
-        Memento
+        Welcome
     </h2>
     <p>
         This is Memento. It's sexy. We're gonna include some sexy text here that makes you want to use it.
     </p>
     <p>
 
-        <asp:Button ID="btnCreateAccount" runat="server" Text="Create Account" />
+        <asp:Button ID="btnCreateAccount" runat="server" Text="Create Account" OnClick="btnCreateAccount_Click" />
 
-        <asp:Button ID="btnLogin" runat="server" Text="Login" />
+        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
 
     </p>
 </asp:Content>

@@ -9,7 +9,7 @@ using Lib.DataObjects;
 
 namespace WebApp
 {
-    public partial class _Default : PageBase
+    public partial class RequestKey : PageBase
     {
         private FormValidation mValidator = new FormValidation();
 
@@ -19,7 +19,7 @@ namespace WebApp
         }
 
         protected void Page_Load(object sender, EventArgs e)
-        { 
+        {
             try
             {
                 if (ProcessPage)
@@ -35,16 +35,6 @@ namespace WebApp
             {
                 AddError(ex);
             }
-        }
-
-        protected void btnCreateAccount_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("RequestKey.aspx"); 
-        }
-
-        protected void btnLogin_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Login.aspx"); 
         }
     }
 }

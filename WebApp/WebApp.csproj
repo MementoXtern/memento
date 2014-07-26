@@ -20,6 +20,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,6 +61,8 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CreateAccount.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Plugins\fullcalendar\changelog.txt" />
     <Content Include="Plugins\fullcalendar\demos\agenda-views.html" />
     <Content Include="Plugins\fullcalendar\demos\basic-views.html" />
@@ -139,6 +145,7 @@
     <Content Include="Plugins\fullcalendar\lib\jquery.min.js" />
     <Content Include="Plugins\fullcalendar\lib\moment.min.js" />
     <Content Include="Plugins\fullcalendar\license.txt" />
+    <Content Include="RequestKey.aspx" />
     <Content Include="Styles\bootstrap\css\bootstrap-theme.css" />
     <Content Include="Styles\bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="Styles\bootstrap\css\bootstrap.css" />
@@ -163,6 +170,13 @@
     <Compile Include="Architecture\PageBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="CreateAccount.aspx.cs">
+      <DependentUpon>CreateAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateAccount.aspx.designer.cs">
+      <DependentUpon>CreateAccount.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -173,7 +187,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestKey.aspx.cs">
+      <DependentUpon>RequestKey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestKey.aspx.designer.cs">
+      <DependentUpon>RequestKey.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
