@@ -6,6 +6,7 @@
     <title>
         <%: Page.Title %></title>
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -41,5 +42,7 @@
     <div class="footer">
     </div>
     </form>
+    <script src="Plugins/fullcalendar/lib/jquery.min.js"></script>
+    <script src="Styles/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

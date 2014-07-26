@@ -12,3 +12,10 @@ C:\Users\bporter\Documents\Git\WebApp\bin\Lib.pdb
 C:\Users\bporter\Documents\Git\WebApp\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\bporter\Documents\Git\WebApp\obj\Debug\WebApp.dll
 C:\Users\bporter\Documents\Git\WebApp\obj\Debug\WebApp.pdb
+C:\Users\jbutler\Workspace\memento\WebApp\bin\WebApp.dll
+C:\Users\jbutler\Workspace\memento\WebApp\bin\WebApp.pdb
+C:\Users\jbutler\Workspace\memento\WebApp\bin\Lib.dll
+C:\Users\jbutler\Workspace\memento\WebApp\bin\Lib.pdb
+C:\Users\jbutler\Workspace\memento\WebApp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jbutler\Workspace\memento\WebApp\obj\Debug\WebApp.dll
+C:\Users\jbutler\Workspace\memento\WebApp\obj\Debug\WebApp.pdb
