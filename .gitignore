@@ -1,6 +1,4 @@
 web.config
-WebApp/bin
-WebApp/obj/*
-Lib/bin
-Lib/obj
+*/bin
+*/obj
 *.suo
