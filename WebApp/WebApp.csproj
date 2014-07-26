@@ -61,6 +61,7 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\login_bg.jpg" />
     <Content Include="CreateAccount.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Assets\oooops.jpg" />
@@ -156,7 +157,7 @@
     <Content Include="Styles\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Styles\bootstrap\js\bootstrap.js" />
     <Content Include="Styles\bootstrap\js\bootstrap.min.js" />
-    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\Default.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -200,6 +201,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestKey.aspx.cs">
       <DependentUpon>RequestKey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="RequestKey.aspx.designer.cs">
       <DependentUpon>RequestKey.aspx</DependentUpon>
