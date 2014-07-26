@@ -12,6 +12,5 @@
     </p>
     <p>
         asdfasdfasdfasdf
-        <button type="button" class="btn btn-primary" ID="Button1" runat="server">Button</button>
     </p>
 </asp:Content>
