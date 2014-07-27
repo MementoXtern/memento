@@ -1,10 +1,10 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApp.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LoggedIn.master.cs" Inherits="WebApp.SiteMaster" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head runat="server">
+<head id="Head1" runat="server">
     <title>
-        <%: Page.Title %>
+        <%: Page.Title%>
         - Memento</title>
     <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Plugins/fullcalendar/lib/jquery.min.js") %>"></script>
     <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Styles/bootstrap/js/bootstrap.min.js") %>"></script>
@@ -14,6 +14,7 @@
 
     <link href="~/Styles/Default.css" rel="stylesheet" type="text/css" />
     <link href="~/Styles/Login.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/LoggedIn.css" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet'
         type='text/css'>
     <link href="~/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -22,13 +23,19 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form runat="server">
+    <form id="Form1" runat="server">
         <div class='background'>
             <img src='/Assets/login_bg_04.jpg' />
         </div>
-        <div class="page default">
+        <div class="page loggedIn">
             <div class="header">
                 <div class="loginDisplay">
+                </div>
+                <div class='logo'>
+                    <img src='/Assets/logo.png' width="80" />
+                    <div class="title">
+                        Memento
+                    </div>
                 </div>
                 <div class="clear hideSkiplink">
                     <div class="menu" id="NavigationMenu" style="float: left;">
@@ -43,12 +50,6 @@
                     </div>
                     <div style="clear: left;">
                     </div>
-                </div>
-            </div>
-            <div class='logo'>
-                <img src='/Assets/logo.png' width="80" />
-                <div class="title">
-                    Memento
                 </div>
             </div>
             <div class="main">
