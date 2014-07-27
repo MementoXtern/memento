@@ -8,11 +8,7 @@ GO
 
 CREATE PROCEDURE [dbo].[ItemDelete] 
 	@ItemName VARCHAR(50),
-	@VendorID INT,
-	@CustomItemID INT,
-	--@EmployeeID INT
-	@EventID INT
-
+	@VendorID INT
 AS
 BEGIN
 
