@@ -64,6 +64,7 @@
     <Content Include="Assets\login_bg.jpg" />
     <Content Include="company\home.aspx" />
     <Content Include="hr\CreateAccount.aspx" />
+    <Content Include="hr\HRCalendarView.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Manage_inventory.aspx" />
     <Content Include="oooops.aspx" />
@@ -202,6 +203,13 @@
     </Compile>
     <Compile Include="hr\CreateAccount.aspx.designer.cs">
       <DependentUpon>CreateAccount.aspx</DependentUpon>
+	</Compile>
+    <Compile Include="hr\HRCalendarView.aspx.cs">
+      <DependentUpon>HRCalendarView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hr\HRCalendarView.aspx.designer.cs">
+      <DependentUpon>HRCalendarView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
