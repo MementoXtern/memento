@@ -15,8 +15,8 @@
                 dayClick: function (date, jsEvent, view) {
                     console.log('clicked: ', date.format());
                 },
-                eventMouseOver: function (event, jsEvent, view) {
-
+                eventMouseover: function (event, jsEvent, view) {
+                    $(this).css('cursor', 'pointer');
                 },
                 eventClick: function (event, jsEvent, view) {
                     console.log('clicked: ', JSON.stringify(event));
@@ -36,14 +36,20 @@
                 console.log('complete pushed for event: ' + current_event.title);
                 if ($(event_visual).css('border-color') == 'rgb(58, 135, 173)') {
                     $(event_visual).css('border-color', completedColor);
+                    current_event.isComplete = true;
                 }
                 else {
                     $(event_visual).css('border-color', 'rgb(58, 135, 173)');
+                    current_event.isComplete = false;
                 }
             });
 
             $('#modalClose').click(function () {
                 $('.eventInfo').attr('disabled', true);
+            });
+
+            $('#syncBtn').click(function () {
+
             });
         });
 
