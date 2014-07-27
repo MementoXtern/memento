@@ -188,6 +188,7 @@
     </Compile>
     <Compile Include="hr\CreateAccount.aspx.cs">
       <DependentUpon>CreateAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="hr\CreateAccount.aspx.designer.cs">
       <DependentUpon>CreateAccount.aspx</DependentUpon>
