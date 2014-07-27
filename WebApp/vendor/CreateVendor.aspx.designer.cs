@@ -7,28 +7,37 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApp {
+namespace WebApp.vendor {
     
     
     public partial class CreateVendor {
         
         /// <summary>
-        /// txtVendorName control.
+        /// txtCompanyName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtVendorName;
+        protected global::System.Web.UI.WebControls.TextBox txtCompanyName;
         
         /// <summary>
-        /// txtVendorEmail control.
+        /// txtShippingAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtVendorEmail;
+        protected global::System.Web.UI.WebControls.TextBox txtShippingAddress;
+        
+        /// <summary>
+        /// txtBillingAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtBillingAddress;
         
         /// <summary>
         /// txtUsername control.

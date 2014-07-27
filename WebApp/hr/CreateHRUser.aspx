@@ -1,4 +1,4 @@
-﻿<%@ Page Title="CreateHRUser" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CreateHRUser.aspx.cs" Inherits="WebApp.vendor.WebForm1" %>
+﻿<%@ Page Title="CreateHRUser" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CreateHRUser.aspx.cs" Inherits="WebApp.vendor.CreateHRUser" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">

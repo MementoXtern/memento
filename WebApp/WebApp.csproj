@@ -163,6 +163,7 @@
     <Content Include="Global.asax" />
     <Content Include="Styles\Login.css" />
     <Content Include="hr\CreateHRUser.aspx" />
+    <Content Include="vendor\CreateVendor.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -247,6 +248,7 @@
     </Compile>
     <Compile Include="vendor\home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
+	  <SubType>ASPXCodeBehind</SubType>
 	</Compile>
     <Compile Include="hr\CreateHRUser.aspx.cs">
       <DependentUpon>CreateHRUser.aspx</DependentUpon>
@@ -257,6 +259,13 @@
     </Compile>
     <Compile Include="vendor\home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
+	</Compile>
+    <Compile Include="vendor\CreateVendor.aspx.cs">
+      <DependentUpon>CreateVendor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vendor\CreateVendor.aspx.designer.cs">
+      <DependentUpon>CreateVendor.aspx</DependentUpon>
     </Compile>
     <Compile Include="webservice\webservice.asmx.cs">
       <DependentUpon>webservice.asmx</DependentUpon>

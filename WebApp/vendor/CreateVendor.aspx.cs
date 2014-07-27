@@ -7,35 +7,35 @@ using System.Web.UI.WebControls;
 using WebApp.Architecture;
 using Lib.DataObjects;
 
-namespace WebApp
+namespace WebApp.vendor
 {
     public partial class CreateVendor : PageBase
     {
-            private FormValidation mValidator = new FormValidation();
+        private FormValidation mValidator = new FormValidation();
 
-            protected void Page_PreInit(object sender, EventArgs e)
+        protected void Page_PreInit(object sender, EventArgs e)
+        {
+            PageId = 1;
+            litError.Text = "";
+        }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            try
             {
-                PageId = null;
-                litError.Text = "";
+                if (ProcessPage)
+                {
+                    // Do Shit
+                }
+                else
+                {
+                    throw new AccessViolationException("The page did not process correctly.");
+                }
             }
-
-            protected void Page_Load(object sender, EventArgs e)
+            catch (Exception ex)
             {
-                try
-                {
-                    if (ProcessPage)
-                    {
-                        // Do Shit
-                    }
-                    else
-                    {
-                        throw new AccessViolationException("The page did not process correctly.");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    AddError(ex);
-                }
+                AddError(ex);
             }
         }
+    }
 }

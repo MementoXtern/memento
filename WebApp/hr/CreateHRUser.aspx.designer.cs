@@ -10,7 +10,7 @@
 namespace WebApp.vendor {
     
     
-    public partial class WebForm1 {
+    public partial class CreateHRUser {
         
         /// <summary>
         /// txtCompanyName control.
