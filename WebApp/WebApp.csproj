@@ -154,6 +154,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Vendor_home.aspx" />
+    <Content Include="webservice\webservice.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Architecture\FormValidation.cs" />
@@ -198,6 +199,9 @@
     </Compile>
     <Compile Include="Vendor_home.aspx.designer.cs">
       <DependentUpon>Vendor_home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webservice\webservice.asmx.cs">
+      <DependentUpon>webservice.asmx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

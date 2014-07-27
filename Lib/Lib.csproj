@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessObjects\CalendarEventObject.cs" />
     <Compile Include="BusinessObjects\LoginObject.cs" />
     <Compile Include="BusinessObjects\MenuItemObject.cs" />
     <Compile Include="DataObjects\Account.cs" />
+    <Compile Include="DataObjects\CalendarEvent.cs" />
     <Compile Include="DataObjects\MenuItem.cs" />
     <Compile Include="DataObjects\TestObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
