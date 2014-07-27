@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Services;
 using Lib.DataObjects;
 using System.Web.Script.Serialization;
+using System.Web.Script.Services;
+using Lib.BusinessObjects;
 
 namespace WebApp.webservice
 {
@@ -15,17 +17,16 @@ namespace WebApp.webservice
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
-    // [System.Web.Script.Services.ScriptService]
+    [System.Web.Script.Services.ScriptService]
     public class webservice : System.Web.Services.WebService
     {
         [WebMethod]
-        public string GetEvents()
+        public void GetEvents()
         {
             var calendarEvents = CalendarEvent.GetCalendarEvents(0);
 
             var json = new JavaScriptSerializer().Serialize(calendarEvents);
-
-            return json;
+            HttpContext.Current.Response.Write(json);
         }
     }
 }

@@ -7,8 +7,9 @@ namespace Lib.BusinessObjects
 {
     public class CalendarEventObject
     {
-        public int ID { get; set; }
-        public string Title { get; set; }
-        public string Start { get; set; }
+        public int id { get; set; }
+        public string title { get; set; }
+        public string start { get; set; }
+        public string description { get; set; }
     }
 }
