@@ -43,6 +43,12 @@
                     $(event_visual).css('background-color', incompleteColor);
                     current_event.isComplete = false;
                 }
+
+                $.ajax({
+                    url: "/webservice/webservice.asmx/CompleteEvent",
+                    type: "POST",
+                    data: { eventId: current_event.id, isComplete: current_event.isComplete }
+                });
             });
 
             $('#modalSave').click(function () { //Send updated event to db
