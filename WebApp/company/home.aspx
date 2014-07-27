@@ -75,8 +75,9 @@
     </script>
 
     <div id="calendar"></div>
-
-    <button type="button" id="btnCreateMemento">Create Memento</button>
+    <p class="inputs">
+    <button type="button" class="btn btn-primary" id="btnCreateMemento">Create Memento</button>
+    </p>
 
     <div class="modal fade" id="MementoEvent">
   <div class="modal-dialog">
