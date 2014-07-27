@@ -62,7 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\login_bg.jpg" />
-    <Content Include="CreateAccount.aspx" />
+    <Content Include="hr\CreateAccount.aspx" />
+    <Content Include="vendor\CreateVendor.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Assets\oooops.jpg" />
     <Content Include="oooops.aspx" />
@@ -174,12 +175,19 @@
     <Compile Include="Architecture\PageBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CreateAccount.aspx.cs">
+    <Compile Include="hr\CreateAccount.aspx.cs">
       <DependentUpon>CreateAccount.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CreateAccount.aspx.designer.cs">
+    <Compile Include="hr\CreateAccount.aspx.designer.cs">
       <DependentUpon>CreateAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vendor\CreateVendor.aspx.cs">
+      <DependentUpon>CreateVendor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vendor\CreateVendor.aspx.designer.cs">
+      <DependentUpon>CreateVendor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -236,9 +244,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="hr\" />
     <Folder Include="Scripts\" />
-    <Folder Include="vendor\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Site.Master" />
