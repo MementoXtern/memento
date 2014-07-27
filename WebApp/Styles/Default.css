@@ -1,73 +1,98 @@
 ﻿body{
     background: url('/Assets/login_bg.jpg');
 }
+.header {
+    padding: 5px;
+    background: #eef; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #eeeeff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eeeeff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#eeeeff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%,#eeeeff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%,#eeeeff 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%,#eeeeff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeff',GradientType=0 ); /* IE6-9 */   
+    
+}
 .header .title {
     display: inline-block;
-}
-.header .title h1 {
-    color: white;
+    color: black;
     font-family: Garamond;
-    font-size: 40px;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px gray;
+    font-size: 22px;
+    margin-left: 5px;
 }
 .header .clear {
     display: none;
 }
 .header .logo {
-    width: 46px;
-    height: 50px;
+    width: 26px;
+    height: 30px;
     display: inline-block;
     background-color: white;
-    margin: 10px;
+    box-shadow: 0px 1px 1px gray;
 }
 .header .logo .logo-let {
-    width: 43px;
-    height: 40px;
+    width: 23px;
+    height: 23px;
     text-align: center;
     background: #359;
     margin: 2px auto;
     color: #fe7;
-    font-size: 38px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 22px;
     font-weight: bold;
     font-family: sans-serif;
-    text-shadow: 0px 1px 1px black;
+    text-shadow: 0px 1px 1px gray;
 }
 .main {
     width: 75%;
     max-width: 600px;
     margin: 120px auto;
-    box-shadow: 1px 2px 2px black;
-    padding: 20px;
-    background: rgba(0,0,0,0.3);
+    box-shadow: 1px 2px 2px #666;
+    padding: 10px 40px;
+    background: #eef;
+    border-radius: 15px;
 }
 .main h2.title {
-    color: white;
-    font-size: 40px;
-    text-shadow: 0px 1px 1px #666;
-    font-family: Calibri, Garamond;
+    color: black;
+    font-size: 32px;
+    text-align: center;
+    font-family: Garamond;
 }
 .main p {
-    padding: 10px;
+    padding: 10px 0px;
 }
 .main p.splash-text {
-    color: #eee;
-    font-size: 16px;
+    color: #444;
+    font-size: 14px;
     font-family: sans-serif;
-    text-shadow: 0px 1px 1px #444;
+    padding-left: 10px;
 }
 .main .inputs {
     text-align: center;
 }
 .main .inputs input {
     padding: 10px 20px;
-    min-width: 45%;
-    background-color: #136;
+    min-width: 35%;
+    border-radius: 2px;
     border: none;
     color: white;
-    box-shadow: 1px 1px 1px black;
+    border-right: 1px solid #015;
+    border-bottom: 1px solid #015;
     margin: 0px 10px;
+    outline: none;
+    
+    font-family: calibri;
+    font-size: 16px;
+    text-transform: Capitalize;
+    
+    background: #469; /* Old browsers */
+    background: -moz-linear-gradient(top, #6688bb 0%, #446699 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6688bb), color-stop(100%,#446699)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #6688bb 0%,#446699 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #6688bb 0%,#446699 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #6688bb 0%,#446699 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #6688bb 0%,#446699 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6688bb', endColorstr='#446699',GradientType=0 ); /* IE6-9 */
 }
 
     
