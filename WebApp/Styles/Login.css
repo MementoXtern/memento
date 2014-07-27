@@ -1,0 +1,21 @@
+﻿.main p.field{
+    padding: 0px;
+}
+.main .login .field label{
+    min-width: 100px;
+    font-weight: normal;
+}
+.field input {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    min-width: 230px;
+    color: #333;
+    font-style: italic;
+    border: 1px solid #ccc;
+}
+.main .login { 
+    max-width: 400px;
+}
+
+    

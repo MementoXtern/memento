@@ -1,20 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 using WebApp.Architecture;
+using Lib.DataObjects;
 
 namespace WebApp
 {
-    public partial class _Default : PageBase
+    public partial class RequestKey : PageBase
     {
         private FormValidation mValidator = new FormValidation();
 
         protected void Page_PreInit(object sender, EventArgs e)
         {
-            PageId = null;
             litError.Text = "";
         }
 
         protected void Page_Load(object sender, EventArgs e)
-        { 
+        {
             try
             {
                 if (ProcessPage)
@@ -30,16 +35,6 @@ namespace WebApp
             {
                 AddError(ex);
             }
-        }
-
-        protected void btnCreateAccount_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("RequestKey.aspx"); 
-        }
-
-        protected void btnLogin_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Login.aspx"); 
         }
     }
 }
