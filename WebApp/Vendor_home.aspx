@@ -19,6 +19,7 @@
                         current_event = event;
                         event_visual = this;
                         $('#eventInfoTitle').html('Event: ' + event.title);
+                        $('#eventInfoOrigin').html('Ordered by: ' + event.origin);
                         $('#eventInfoDay').html('Day: ' + event.start);
                         $('#eventInfoLocation').html('Location: ' + event.location);
                         $('#eventInfoItem').html('Item: ' + event.title); //event.item
@@ -53,6 +54,7 @@
             </div>
             <div class="modal-body">
                 <p id="eventInfoTitle"></p>
+                <p id="eventInfoOrigin"></p>
                 <p id="eventInfoDay"></p>
                 <p id="eventInfoLocation"></p>
                 <p id="eventInfoItem"></p>
