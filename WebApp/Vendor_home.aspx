@@ -42,6 +42,12 @@
                     $(event_visual).css('border-color', 'rgb(58, 135, 173)');
                     current_event.isComplete = false;
                 }
+
+                $.ajax({
+                    url: "/webservice/webservice.asmx/CompleteEvent",
+                    type: "POST",
+                    data: { eventId: current_event.id, isComplete: current_event.isComplete }
+                });
             });
 
             $('#modalClose').click(function () {

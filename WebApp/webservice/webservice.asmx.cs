@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Services;
-using Lib.DataObjects;
+﻿using System.Web;
 using System.Web.Script.Serialization;
-using System.Web.Script.Services;
-using Lib.BusinessObjects;
+using System.Web.Services;
+using Lib.DataObjects.Vendor;
 
 namespace WebApp.webservice
 {
@@ -27,6 +22,12 @@ namespace WebApp.webservice
 
             var json = new JavaScriptSerializer().Serialize(calendarEvents);
             HttpContext.Current.Response.Write(json);
+        }
+
+        [WebMethod]
+        public void CompleteEvent(int eventId, bool isComplete)
+        {
+            CalendarEvent.CompleteEvent(eventId, isComplete);
         }
     }
 }
