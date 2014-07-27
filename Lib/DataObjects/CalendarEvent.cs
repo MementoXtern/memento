@@ -21,8 +21,8 @@ namespace Lib.DataObjects
             //query.AddParameter("@AccountTypeId", testId);
             //DBManager.Execute(query, ref dt);
 
-            calendarEvents.Add(new CalendarEventObject { id = 1, title = "Huge Ass Boobs", start = DateTime.Now.ToShortDateString(), description = "Blow me" });
-            calendarEvents.Add(new CalendarEventObject { id = 2, title = "Like seriously, fucking huge", start = DateTime.Now.ToShortDateString(), description = "Seriously, blow me" });
+            calendarEvents.Add(new CalendarEventObject { id = 1, title = "Huge Ass Boobs", start = DateTime.Now.ToString(), originCompany = "Blizzard, Inc", location = "Jail", item="Butt Plug", quantity= 17 });
+            calendarEvents.Add(new CalendarEventObject { id = 2, title = "Like seriously, fucking huge", start = DateTime.Now.ToString(), originCompany = "PornHub Inc", location="Alterac Valley", item="Stolen Music", quantity=1092 });
 
             return calendarEvents;
         }
