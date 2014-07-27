@@ -2,11 +2,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <h2 class='title'>Product Key</h2>
-    <p class='splash-text'>
-        Please enter the product key: <asp:TextBox ID="txtKeyRequest" runat="server"></asp:TextBox>
-    </p>
-    <p class='splash-text'>
-        If you don't have a product key and would like one, please contact MementoHRSoftware@gmail.com.
-    </p>
+    <div class='product-key splash'>
+        <h2 class='title'>Product Key</h2>
+        <p class='splash-text'>
+            If you don't have a product key and would like one, please contact MementoHRSoftware@gmail.com.
+        </p>
+        <p class='field'>
+            <asp:TextBox ID="txtKeyRequest" runat="server"></asp:TextBox>
+        </p>
+        <p class='inputs'>
+            <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+        </p>
+    </div>
 </asp:Content>

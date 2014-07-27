@@ -1,60 +1,41 @@
 ﻿body{
-    background: url('/Assets/login_bg.jpg');
+    background: url('/Assets/login_bg_01.jpg');
 }
 .header {
-    padding: 5px;
-    background: #eef; /* Old browsers */
-    background: -moz-linear-gradient(top, #ffffff 0%, #eeeeff 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eeeeff)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #ffffff 0%,#eeeeff 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #ffffff 0%,#eeeeff 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #ffffff 0%,#eeeeff 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #ffffff 0%,#eeeeff 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeff',GradientType=0 ); /* IE6-9 */   
-    
+    padding: 5px;  
 }
-.header .title {
-    display: inline-block;
-    color: black;
-    font-family: Garamond;
-    font-size: 22px;
-    margin-left: 5px;
-}
+
 .header .clear {
     display: none;
 }
-.header .logo {
-    width: 26px;
-    height: 30px;
-    display: inline-block;
-    background-color: white;
-    box-shadow: 0px 1px 1px gray;
-}
-.header .logo .logo-let {
-    width: 23px;
-    height: 23px;
+.logo {
+    margin-top: 60px;
     text-align: center;
-    background: #359;
-    margin: 2px auto;
-    color: #fe7;
-    font-size: 22px;
-    line-height: 22px;
-    font-weight: bold;
-    font-family: sans-serif;
-    text-shadow: 0px 1px 1px gray;
+}
+.logo .title {
+    display: inline-block;
+    color: white;
+    font-family: "Gloria Hallelujah";
+    font-size: 28px;
+    margin-left: 5px;
 }
 .main {
-    width: 75%;
+    width: 100%;
+    height: 100%;
     max-width: 600px;
-    margin: 120px auto;
-    box-shadow: 1px 2px 2px #666;
+    margin: 60px auto;
+}
+.splash {
+    background: rgba(0,0,0,0.1);
     padding: 10px 40px;
-    background: #eef;
     border-radius: 15px;
+    text-align: center;  
+    max-width: 600px;
+    margin: auto;
 }
 .main h2.title {
-    color: black;
-    font-size: 32px;
+    color: white;
+    font-size: 40px;
     text-align: center;
     font-family: Garamond;
 }
@@ -62,8 +43,9 @@
     padding: 10px 0px;
 }
 .main p.splash-text {
-    color: #444;
+    color: #ccc;
     font-size: 14px;
+    text-shadow: 0px 1px 1px #333;
     font-family: sans-serif;
     padding-left: 10px;
 }
@@ -76,8 +58,8 @@
     border-radius: 2px;
     border: none;
     color: white;
-    border-right: 1px solid #015;
-    border-bottom: 1px solid #015;
+    border-right: 1px solid darkred;
+    border-bottom: 1px solid darkred;
     margin: 0px 10px;
     outline: none;
     
@@ -85,14 +67,14 @@
     font-size: 16px;
     text-transform: Capitalize;
     
-    background: #469; /* Old browsers */
-    background: -moz-linear-gradient(top, #6688bb 0%, #446699 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6688bb), color-stop(100%,#446699)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #6688bb 0%,#446699 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #6688bb 0%,#446699 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #6688bb 0%,#446699 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #6688bb 0%,#446699 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6688bb', endColorstr='#446699',GradientType=0 ); /* IE6-9 */
+background: #ee0000; /* Old browsers */
+background: -moz-linear-gradient(top, #ee0000 0%, #d0000d 99%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ee0000), color-stop(99%,#d0000d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ee0000 0%,#d0000d 99%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ee0000 0%,#d0000d 99%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ee0000 0%,#d0000d 99%); /* IE10+ */
+background: linear-gradient(to bottom, #ee0000 0%,#d0000d 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee0000', endColorstr='#d0000d',GradientType=0 ); /* IE6-9 */
 }
 
     
