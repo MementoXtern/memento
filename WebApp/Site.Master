@@ -16,6 +16,7 @@
     <script src="Styles/bootstrap/js/bootstrap.min.js"></script>
     <script src="Plugins/fullcalendar/lib/moment.min.js"></script>
     <script src="Plugins/fullcalendar/fullcalendar.min.js"></script>
+    <script type='text/javascript' src='Plugins/fullcalendar/gcal.js'></script>
     <form runat="server">
     <div class="page">
         <div class="header">
