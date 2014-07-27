@@ -6,13 +6,13 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using WebApp.Architecture;
 
-namespace WebApp.vendor
+namespace WebApp.company
 {
-    public partial class Vendor_Home : PageBase
+    public partial class home : PageBase
     {
         protected void Page_PreInit(object sender, EventArgs e)
         {
-            PageId = 1;
+            PageId = 2;
             litError.Text = "";
         }
 

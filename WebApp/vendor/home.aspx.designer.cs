@@ -10,6 +10,6 @@
 namespace WebApp.vendor {
     
     
-    public partial class Vendor_Home {
+    public partial class Home {
     }
 }

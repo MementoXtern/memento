@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\login_bg.jpg" />
+    <Content Include="company\home.aspx" />
     <Content Include="hr\CreateAccount.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Manage_inventory.aspx" />
@@ -168,13 +169,20 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="vendor\Vendor_home.aspx" />
+    <Content Include="vendor\home.aspx" />
     <Content Include="webservice\webservice.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Architecture\FormValidation.cs" />
     <Compile Include="Architecture\PageBase.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="company\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -236,12 +244,12 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="vendor\Vendor_home.aspx.cs">
-      <DependentUpon>Vendor_home.aspx</DependentUpon>
+    <Compile Include="vendor\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="vendor\Vendor_home.aspx.designer.cs">
-      <DependentUpon>Vendor_home.aspx</DependentUpon>
+    <Compile Include="vendor\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
     </Compile>
     <Compile Include="webservice\webservice.asmx.cs">
       <DependentUpon>webservice.asmx</DependentUpon>
@@ -249,7 +257,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="company\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
