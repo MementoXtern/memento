@@ -7,65 +7,81 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApp {
+namespace WebApp.company {
     
     
-    public partial class CreateAccount {
+    public partial class HRCalendarView {
         
         /// <summary>
-        /// txtProductKey control.
-        /// txtCompanyName control.
+        /// txtEventName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtProductKey;
-        protected global::System.Web.UI.WebControls.TextBox txtCompanyName;
+        protected global::System.Web.UI.WebControls.TextBox txtEventName;
         
         /// <summary>
-        /// txtBillingAddress control.
+        /// ddlEventType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBillingAddress;
+        protected global::System.Web.UI.WebControls.DropDownList ddlEventType;
         
         /// <summary>
-        /// txtShippingAddress control.
+        /// MementoEvent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtShippingAddress;
+        protected global::System.Web.UI.WebControls.SqlDataSource MementoEvent;
         
         /// <summary>
-        /// txtContactEmail control.
+        /// ddlVendor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtContactEmail;
+        protected global::System.Web.UI.WebControls.DropDownList ddlVendor;
         
         /// <summary>
-        /// txtUsername control.
+        /// MementoDB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUsername;
+        protected global::System.Web.UI.WebControls.SqlDataSource MementoDB;
         
         /// <summary>
-        /// txtPassword control.
+        /// ddlItem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        protected global::System.Web.UI.WebControls.DropDownList ddlItem;
+        
+        /// <summary>
+        /// txtItemQuantity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtItemQuantity;
+        
+        /// <summary>
+        /// txtInstructionsCustomizations control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtInstructionsCustomizations;
     }
 }

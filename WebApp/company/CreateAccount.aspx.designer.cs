@@ -7,10 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApp.vendor {
+namespace WebApp.company {
     
     
-    public partial class CreateHRUser {
+    public partial class CreateAccount {
+        
+        /// <summary>
+        /// txtProductKey control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtProductKey;
         
         /// <summary>
         /// txtCompanyName control.
@@ -22,15 +31,6 @@ namespace WebApp.vendor {
         protected global::System.Web.UI.WebControls.TextBox txtCompanyName;
         
         /// <summary>
-        /// txtShippingAddress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtShippingAddress;
-        
-        /// <summary>
         /// txtBillingAddress control.
         /// </summary>
         /// <remarks>
@@ -38,6 +38,15 @@ namespace WebApp.vendor {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtBillingAddress;
+        
+        /// <summary>
+        /// txtShippingAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtShippingAddress;
         
         /// <summary>
         /// txtContactEmail control.

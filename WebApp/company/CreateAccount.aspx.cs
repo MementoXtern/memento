@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 using WebApp.Architecture;
 using Lib.DataObjects;
 
-namespace WebApp
+namespace WebApp.company
 {
     public partial class CreateAccount : PageBase
     {

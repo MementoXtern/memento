@@ -7,9 +7,9 @@ using System.Web.UI.WebControls;
 using WebApp.Architecture;
 using Lib.DataObjects;
 
-namespace WebApp.vendor
+namespace WebApp.company
 {
-    public partial class CreateHRUser : PageBase
+    public partial class HRCalendarView : PageBase
     {
         private FormValidation mValidator = new FormValidation();
 
