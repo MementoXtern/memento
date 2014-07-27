@@ -32,6 +32,10 @@
                     $('.fade').modal('show');
                 }
             });
+            
+            $('#btnCreateMemento').click(function () {
+                $('.fade').modal('show')
+            });
 
             $('#completeEventBtn').click(function () {
                 console.log('complete pushed for event: ' + current_event.title);
@@ -56,6 +60,8 @@
     </script>
 
     <div id="calendar"></div>
+
+    <button type="button" id="btnCreateMemento">Create Memento</button>
 
     <div class="modal fade">
   <div class="modal-dialog">
