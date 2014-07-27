@@ -13,5 +13,9 @@ namespace WebApp
         {
 
         }
+        protected void btnPress_logout(object sender, EventArgs e)
+        {
+ 
+        }
     }
 }

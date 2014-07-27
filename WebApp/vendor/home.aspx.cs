@@ -8,19 +8,19 @@ using WebApp.Architecture;
 
 namespace WebApp.vendor
 {
-    public partial class Home : PageBase
+    public partial class Home : Page
     {
         protected void Page_PreInit(object sender, EventArgs e)
         {
-            PageId = 1;
-            litError.Text = "";
+            //PageId = 1;
+            //litError.Text = "";
         }
 
         protected void Page_Load(object sender, EventArgs e)
         {
             try
             {
-                if (ProcessPage)
+                if (true)
                 {
                     // Do Shit
                 }
@@ -31,7 +31,7 @@ namespace WebApp.vendor
             }
             catch (Exception ex)
             {
-                AddError(ex);
+                //AddError(ex);
             }
         }
     }

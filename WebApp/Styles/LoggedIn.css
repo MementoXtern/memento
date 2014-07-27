@@ -44,6 +44,14 @@
 }
 .loggedIn .header .clear ul{
    list-style: none outside;
+   display: inline-block;
+}
+.loggedIn .header .clear .inputs{
+   display: inline-block;
+   position: absolute;
+   right: 10px;
+   top: 20px;
+   width: 105px;
 }
 .loggedIn .header .clear ul li{
    margin: 0px 10px!important;
@@ -56,4 +64,9 @@
 }
 .modal-backdrop {
     z-index: 1!important;   
+}
+.loggedIn .inputs input {
+    width: 100px!important;
+    min-width: 0px;
+    padding: 5px;   
 }
