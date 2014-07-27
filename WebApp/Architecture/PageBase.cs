@@ -4,6 +4,7 @@ using System.Text;
 using System.Web.Configuration;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using PageObject = Lib.DataObjects.Page;
 
 namespace WebApp.Architecture
 {
@@ -138,7 +139,7 @@ namespace WebApp.Architecture
 
         protected virtual bool ValidatePageRequirements()
         {
-            return true;
+            return PageId.HasValue ? PageObject.CheckAccess(PageId.Value, AccountTypeId.Value) : true;
         }
 
         #endregion

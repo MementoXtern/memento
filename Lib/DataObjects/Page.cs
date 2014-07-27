@@ -29,6 +29,25 @@ namespace Lib.DataObjects
         }
 
         /// <summary>
+        /// Creates a new page  
+        /// </summary>
+        /// <param name="pageName"></param>
+        /// <param name="pageUrl"></param>
+        /// <returns></returns>
+        public static bool CheckAccess(int pageId, int accountTypeId)
+        {
+            int? newPageId = null;
+
+            Query query = new Query(SqlQueryType.SqlStoredProc, "PageCheckAccess");
+            query.AddParameter("@PageId", pageId);
+            query.AddParameter("@AccountTypeId", accountTypeId);
+
+            DBManager.ExecuteScalar(query, ref newPageId);
+
+            return newPageId.HasValue;
+        }
+
+        /// <summary>
         /// Adds page access to the specified account type
         /// </summary>
         /// <param name="pageId"></param>
