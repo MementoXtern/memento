@@ -23,6 +23,9 @@
 </head>
 <body>
     <form runat="server">
+    <div class='background'>
+        <img src='/Assets/login_bg_04.jpg' />
+    </div>
     <div class="page">
         <div class="header">
             <div class="loginDisplay">

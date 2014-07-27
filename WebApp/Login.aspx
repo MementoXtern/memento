@@ -14,7 +14,7 @@
             <asp:Literal ID="litLoginError" runat="server" Text="" />
         </p>
         <p class='inputs'>
-            <asp:Button ID="btnSubmit" runat="server" Text="Submit" 
+            <asp:Button ID="btnSubmit" runat="server" class='red-gradient' Text="Submit" 
                 onclick="btnSubmit_Click" />
         </p>
     </div>
