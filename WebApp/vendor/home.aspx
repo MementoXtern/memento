@@ -65,6 +65,7 @@
 
        
     </script>
+    <div style="background-color: whitesmoke">
     <div id="calendar"></div>
     
     <div class="modal fade" >
@@ -89,4 +90,5 @@
         </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+    </div>
 </asp:Content>
