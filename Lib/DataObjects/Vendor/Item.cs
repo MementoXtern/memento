@@ -28,5 +28,20 @@ namespace Lib.DataObjects.Vendor
 
             DBManager.Execute(query);
         }
+
+        /// <summary>
+        /// Deletes an item for the vendor
+        /// </summary>
+        /// <param name="vendorId"></param>
+        /// <param name="itemName"></param>
+        public static void Delete(int vendorId, string itemName)
+        {
+
+            Query query = new Query(SqlQueryType.SqlStoredProc, "ItemDelete");
+            query.AddParameter("@VendorID", vendorId);
+            query.AddParameter("@ItemName", itemName);
+
+            DBManager.Execute(query);
+        }
     }
 }
