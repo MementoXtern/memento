@@ -45,10 +45,17 @@
     <Compile Include="BusinessObjects\LoginObject.cs" />
     <Compile Include="BusinessObjects\MenuItemObject.cs" />
     <Compile Include="DataObjects\Account.cs" />
+    <Compile Include="DataObjects\AccountType.cs" />
+    <Compile Include="DataObjects\Company\Company.cs" />
+    <Compile Include="DataObjects\Company\Employee.cs" />
+    <Compile Include="DataObjects\EventType.cs" />
+    <Compile Include="DataObjects\Page.cs" />
     <Compile Include="DataObjects\Vendor\CalendarEvent.cs" />
     <Compile Include="DataObjects\Company\Event.cs" />
     <Compile Include="DataObjects\MenuItem.cs" />
     <Compile Include="DataObjects\TestObject.cs" />
+    <Compile Include="DataObjects\Vendor\Item.cs" />
+    <Compile Include="DataObjects\Vendor\Vendor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\DataAccess\CryptoManager.cs" />
     <Compile Include="Utilities\DataAccess\ISqlQuery.cs" />

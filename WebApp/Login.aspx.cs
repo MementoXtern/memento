@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using WebApp.Architecture;
 using Lib.DataObjects;
+using Lib.BusinessObjects;
 
 namespace WebApp
 {
@@ -34,6 +35,26 @@ namespace WebApp
             catch (Exception ex)
             {
                 AddError(ex);
+            }
+        }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string userName = txtUsername.Text;
+            string password = txtPassword.Text;
+
+            LoginObject loginObject = Account.CheckLogin(userName, password);
+
+            if (loginObject != null)
+            {
+                Session["AccountId"] = loginObject.AccountId;
+                Session["AccountTypeId"] = loginObject.AccountTypeId;
+
+                Response.Redirect(loginObject.LandingUrl);
+            }
+            else
+            {
+                litLoginError.Text = "Incorrect username / password combination";
             }
         }
     }

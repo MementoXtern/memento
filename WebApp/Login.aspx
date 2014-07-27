@@ -10,8 +10,12 @@
         <p class='password field'>
             <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
         </p>
+        <p class='incorrect-login'>
+            <asp:Literal ID="litLoginError" runat="server" Text="" />
+        </p>
         <p class='inputs'>
-            <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+            <asp:Button ID="btnSubmit" runat="server" Text="Submit" 
+                onclick="btnSubmit_Click" />
         </p>
     </div>
 </asp:Content>

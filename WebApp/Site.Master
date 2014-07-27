@@ -4,21 +4,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head runat="server">
     <title>
-        <%: Page.Title %> - Memento</title>
+        <%: Page.Title %>
+        - Memento</title>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Plugins/fullcalendar/lib/jquery.min.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Styles/bootstrap/js/bootstrap.min.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Plugins/fullcalendar/lib/moment.min.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Plugins/fullcalendar/fullcalendar.min.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("~/Plugins/fullcalendar/gcal.js") %>"></script>
+
     <link href="~/Styles/Default.css" rel="stylesheet" type="text/css" />
     <link href="~/Styles/Login.css" rel="stylesheet" type="text/css" />
-    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet'
+        type='text/css'>
     <link href="~/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="Plugins/fullcalendar/fullcalendar.css" rel="Stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <script src="Plugins/fullcalendar/lib/jquery.min.js"></script>
-    <script src="Styles/bootstrap/js/bootstrap.min.js"></script>
-    <script src="Plugins/fullcalendar/lib/moment.min.js"></script>
-    <script src="Plugins/fullcalendar/fullcalendar.min.js"></script>
-    <script type='text/javascript' src='Plugins/fullcalendar/gcal.js'></script>
     <form runat="server">
     <div class="page">
         <div class="header">
@@ -26,10 +29,12 @@
             </div>
             <div class="clear hideSkiplink">
                 <div class="menu" id="NavigationMenu" style="float: left;">
-                    <ul class="level1 static"style="position: relative; width: auto; float: left; height: 30px;">
+                    <ul class="level1 static" style="position: relative; width: auto; float: left; height: 30px;">
                         <% for (int i = 0; i < _menuItems.Count; i++)
                            { %>
-                                <li role="menuitem" class="static" style="position: relative; float: left; margin: 0 5px;"><a class="level1 static" href="<%= _menuItems[i].Url %>" tabindex="-1"><%= _menuItems[i].Name %></a></li>
+                        <li role="menuitem" class="static" style="position: relative; float: left; margin: 0 5px;">
+                            <a class="level1 static" href="<%= _menuItems[i].Url %>" tabindex="-1">
+                                <%= _menuItems[i].Name %></a></li>
                         <% } %>
                     </ul>
                 </div>
@@ -37,10 +42,10 @@
                 </div>
             </div>
         </div>
-         <div class='logo'>
-            <img src='/Assets/logo.png' width=80/>
+        <div class='logo'>
+            <img src='/Assets/logo.png' width="80" />
             <div class="title">
-                    Memento
+                Memento
             </div>
         </div>
         <div class="main">

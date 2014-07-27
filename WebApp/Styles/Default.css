@@ -77,4 +77,11 @@ background: linear-gradient(to bottom, #ee0000 0%,#d0000d 99%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee0000', endColorstr='#d0000d',GradientType=0 ); /* IE6-9 */
 }
 
+.incorrect-login 
+{
+    color: #FF0000;
+    font-size:14px;
+    font-weight:bold;
+}
+
     

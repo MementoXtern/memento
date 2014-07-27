@@ -168,7 +168,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Vendor_home.aspx" />
+    <Content Include="vendor\Vendor_home.aspx" />
     <Content Include="webservice\webservice.asmx" />
   </ItemGroup>
   <ItemGroup>
@@ -236,11 +236,11 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="Vendor_home.aspx.cs">
+    <Compile Include="vendor\Vendor_home.aspx.cs">
       <DependentUpon>Vendor_home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vendor_home.aspx.designer.cs">
+    <Compile Include="vendor\Vendor_home.aspx.designer.cs">
       <DependentUpon>Vendor_home.aspx</DependentUpon>
     </Compile>
     <Compile Include="webservice\webservice.asmx.cs">
@@ -251,7 +251,6 @@
   <ItemGroup>
     <Folder Include="company\" />
     <Folder Include="Scripts\" />
-    <Folder Include="vendor\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Site.Master" />
