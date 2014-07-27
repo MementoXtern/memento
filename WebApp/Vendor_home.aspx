@@ -45,7 +45,7 @@
                 }
             });
 
-            $('#modalClose').click(function () { //Send updated event to db
+            $('#modalSave').click(function () { //Send updated event to db
                 var id = current_event.id;
                 console.log('Id: ' + id);
             });
@@ -71,7 +71,7 @@
                 <p id="eventInfoQuantity"></p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" id="modalClose">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="modalSave">Save</button>
                 <button type="button" class="btn btn-primary" id="completeEventBtn">Toggle complete</button>
             </div>
         </div><!-- /.modal-content -->
