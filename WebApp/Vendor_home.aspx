@@ -6,7 +6,8 @@
         $(document).ready(function () {
             var current_event = null;
             var event_visual = null;
-            var completedColor = 'red';
+            var completedColor = 'green';
+            var incompleteColor = 'rgb(58, 135, 173)';
             $('#calendar').fullCalendar({
                 events: {
                     url: '/webservice/webservice.asmx/GetEvents',
@@ -34,28 +35,24 @@
 
             $('#completeEventBtn').click(function () {
                 console.log('complete pushed for event: ' + current_event.title);
-                if ($(event_visual).css('border-color') == 'rgb(58, 135, 173)') {
-                    $(event_visual).css('border-color', completedColor);
+                if ($(event_visual).css('background-color') === incompleteColor) {
+                    $(event_visual).css('background-color', completedColor);
                     current_event.isComplete = true;
                 }
                 else {
-                    $(event_visual).css('border-color', 'rgb(58, 135, 173)');
+                    $(event_visual).css('background-color', incompleteColor);
                     current_event.isComplete = false;
                 }
             });
 
-            $('#modalClose').click(function () {
-                $('.eventInfo').attr('disabled', true);
-            });
-
-            $('#syncBtn').click(function () {
-
+            $('#modalClose').click(function () { //Send updated event to db
+                var id = current_event.id;
+                console.log('Id: ' + id);
             });
         });
 
        
     </script>
-    <button type="button" class="btn btn-primary" id="syncBtn">Sync</button>
     <div id="calendar"></div>
     
     <div class="modal fade" >
@@ -74,7 +71,7 @@
                 <p id="eventInfoQuantity"></p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" id="modalClose">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="modalClose">Save</button>
                 <button type="button" class="btn btn-primary" id="completeEventBtn">Toggle complete</button>
             </div>
         </div><!-- /.modal-content -->
