@@ -34,8 +34,12 @@
 
             $('#completeEventBtn').click(function () {
                 console.log('complete pushed for event: ' + current_event.title);
-                $(event_visual).css('border-color', completedColor);
-                console.log($(event_visual).css('border-color'));
+                if ($(event_visual).css('border-color') == 'rgb(58, 135, 173)') {
+                    $(event_visual).css('border-color', completedColor);
+                }
+                else {
+                    $(event_visual).css('border-color', 'rgb(58, 135, 173)');
+                }
             });
 
             $('#modalClose').click(function () {
@@ -65,7 +69,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal" id="modalClose">Close</button>
-                <button type="button" class="btn btn-primary" id="completeEventBtn">Set complete</button>
+                <button type="button" class="btn btn-primary" id="completeEventBtn">Toggle complete</button>
             </div>
         </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
