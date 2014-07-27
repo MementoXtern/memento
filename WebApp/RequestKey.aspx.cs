@@ -36,5 +36,10 @@ namespace WebApp
                 AddError(ex);
             }
         }
+        protected void btnPress(object sender, EventArgs e)
+        {
+           Response.Redirect("/hr/CreateAccount.aspx");
+        }
+
     }
 }

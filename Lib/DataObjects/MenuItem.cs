@@ -25,8 +25,10 @@ namespace Lib.DataObjects
             //Query query = new Query();
             //query.AddParameter("@AccountTypeId", testId);
             //DBManager.Execute(query, ref dt);
-            menuItems.Add(new MenuItemObject { Url = "boobies.aspx", Name = "BOOBIES" });
-            menuItems.Add(new MenuItemObject { Url = "titties.aspx", Name = "GIGANTIC TITS" });
+            menuItems.Add(new MenuItemObject { Url = "home.aspx", Name = "Home" });
+            menuItems.Add(new MenuItemObject { Url = "home.aspx", Name = "Calendar" });
+            menuItems.Add(new MenuItemObject { Url = "home.aspx", Name = "Upcoming Events" });
+            menuItems.Add(new MenuItemObject { Url = "home.aspx", Name = "Contact" });
 
             return menuItems;
         }

@@ -11,7 +11,8 @@
             <asp:TextBox ID="txtKeyRequest" runat="server"></asp:TextBox>
         </p>
         <p class='inputs'>
-            <asp:Button ID="btnSubmit" class='red-gradient' runat="server" Text="Submit" />
+            <asp:Button ID="btnSubmit" class='red-gradient' runat="server" Text="Submit" 
+                onclick="btnPress"/>
         </p>
     </div>
 </asp:Content>
