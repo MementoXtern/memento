@@ -195,6 +195,7 @@
     </Compile>
     <Compile Include="RequestKey.aspx.designer.cs">
       <DependentUpon>RequestKey.aspx</DependentUpon>
+    </Compile>
     <Compile Include="oooops.aspx.cs">
       <DependentUpon>oooops.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -209,6 +210,13 @@
     </Compile>
     <Compile Include="redirect.aspx.designer.cs">
       <DependentUpon>redirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestKey.aspx.cs">
+      <DependentUpon>RequestKey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestKey.aspx.designer.cs">
+      <DependentUpon>RequestKey.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
