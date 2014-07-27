@@ -1,0 +1,7 @@
+USE MementoDB;
+
+CREATE TABLE EventType(
+EventTypeID INT IDENTITY(1,1),
+EventTypeName VARCHAR(50),
+EventTypeDesc VARCHAR(MAX),
+CONSTRAINT EventTypeID PRIMARY KEY (EventTypeID));
