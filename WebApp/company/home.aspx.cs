@@ -5,14 +5,17 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using WebApp.Architecture;
+using Lib.DataObjects;
 
 namespace WebApp.company
 {
     public partial class home : PageBase
     {
+        private FormValidation mValidator = new FormValidation();
+
         protected void Page_PreInit(object sender, EventArgs e)
         {
-            PageId = 2;
+            PageId = 0;
             litError.Text = "";
         }
 
@@ -26,7 +29,7 @@ namespace WebApp.company
                 }
                 else
                 {
-                    Response.Redirect("~/redirect.aspx");
+                    throw new AccessViolationException("The page did not process correctly.");
                 }
             }
             catch (Exception ex)
