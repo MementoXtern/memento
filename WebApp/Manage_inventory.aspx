@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Manage Inventory" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Manage_inventory.aspx.cs" Inherits="WebApp.WebForm2" %>
+﻿<%@ Page Title="Manage Inventory" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="manage_inventory.aspx.cs" Inherits="WebApp.Manage_Inventory" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -11,27 +11,51 @@
                 $('#GridView1').append('<tr><td>Item value</td><td>column2 value</td></tr>');
             });
         });
+        function addItemBtn_onclick() {
+
+        }
+
     </script>
+    <div style="background-color: whitesmoke">
     <div class="new-item-container">
     <h3>New Item</h3>
         <div class="new-item-input">
             <asp:Label ID="nameLabel" runat="server" Text="Item Name:"></asp:Label>
-            <input type="text" id="newItemNameText" />
+            <asp:TextBox ID="newItemNameText" runat="server"></asp:TextBox>
             <br />
             <asp:Label ID="priceLabel" runat="server" Text="Item Price:"></asp:Label>
-            <input type="text" id="newItemPriceText" />
+            <asp:TextBox ID="newItemPriceText" runat="server" CausesValidation="true" ></asp:TextBox>
+            <asp:RangeValidator
+                ID="RangeValidator1" runat="server" ErrorMessage="Must be a decimal" 
+                Type="Double" ControlToValidate="newItemPriceText"></asp:RangeValidator>
         </div>
-        <button type="button" class="btn btn-primary" id="addItemBtn">Add Item</button>
+        <asp:Button
+            ID="addItemBtn" CssClass="btn btn-primary" runat="server" Text="Add Item" 
+            onclick="addItemBtn_Click" />
     </div>
     
     <div class="existing-items-table">
         <asp:GridView ID="GridView1" runat="server" 
-            onselectedindexchanged="GridView1_SelectedIndexChanged1" Width="449px">
+            onselectedindexchanged="GridView1_SelectedIndexChanged1" Width="449px" 
+            AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
             <Columns>
-                <asp:CheckBoxField AccessibleHeaderText="Checkbox" HeaderText="Checkbox" />
-                <asp:BoundField DataField="hello" HeaderText="Item" />
+                <asp:BoundField DataField="ItemName" HeaderText="ItemName" 
+                    SortExpression="ItemName" />
+                <asp:BoundField DataField="ItemDesc" HeaderText="ItemDesc" 
+                    SortExpression="ItemDesc" />
+                <asp:BoundField DataField="ItemProcessingTime" HeaderText="ItemProcessingTime" 
+                    SortExpression="ItemProcessingTime" />
+                <asp:BoundField DataField="ItemPrice" HeaderText="ItemPrice" 
+                    SortExpression="ItemPrice" />
             </Columns>
         </asp:GridView>
-    </div>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+            ConnectionString="<%$ ConnectionStrings:DBConnection %>" 
+            SelectCommand="SELECT [ItemName], [ItemDesc], [ItemProcessingTime], [ItemPrice] FROM [Item] WHERE ([VendorID] = @VendorID)">
+            <SelectParameters>
+                <asp:SessionParameter Name="VendorID" SessionField="AccountId" Type="Int32" />
+            </SelectParameters>
+        </asp:SqlDataSource>
+    </div></div>
 
 </asp:Content>
