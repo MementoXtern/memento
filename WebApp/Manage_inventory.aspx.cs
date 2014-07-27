@@ -13,7 +13,7 @@ namespace WebApp
     {
         protected void Page_PreInit(object sender, EventArgs e)
         {
-            PageId = 3;
+            PageId = null;
             litError.Text = "";
         }
 
@@ -62,8 +62,19 @@ namespace WebApp
             decimal itemPrice = decimal.Parse(newItemPriceText.Text);
 
             Item.Create(AccountId.Value, itemName, null, itemPrice, 0);
+            lbInventory.Items.Add(itemName);
+            //Response.Redirect("/manage_inventory.aspx");
+        }
 
-            Response.Redirect("/manage_inventory.aspx");
+        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            Console.WriteLine("Delete clicked");
+        }
+
+        protected void btnRemoveItem_Click(object sender, EventArgs e)
+        {
+            Item.Delete(AccountId.Value, lbInventory.SelectedItem.ToString());
+            lbInventory.Items.Remove(lbInventory.SelectedItem);
         }
     }
 }

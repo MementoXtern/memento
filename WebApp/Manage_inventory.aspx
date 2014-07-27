@@ -34,20 +34,31 @@
             onclick="addItemBtn_Click" />
     </div>
     
+    
     <div class="existing-items-table">
+    <!--
         <asp:GridView ID="GridView1" runat="server" 
             onselectedindexchanged="GridView1_SelectedIndexChanged1" Width="449px" 
-            AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+            AutoGenerateColumns="False" DataSourceID="SqlDataSource1" 
+            OnRowDeleting="GridView1_RowDeleting">
             <Columns>
                 <asp:BoundField DataField="ItemName" HeaderText="ItemName" 
                     SortExpression="ItemName" />
+                <asp:BoundField DataField="ItemDesc" HeaderText="ItemDesc" 
+                    SortExpression="ItemDesc" />
                 <asp:BoundField DataField="ItemProcessingTime" HeaderText="ItemProcessingTime" 
                     SortExpression="ItemProcessingTime" />
                 <asp:BoundField DataField="ItemPrice" HeaderText="ItemPrice" 
                     SortExpression="ItemPrice" />
-                <asp:CommandField ButtonType="Button" ShowDeleteButton="True" />
+                <asp:CommandField ShowDeleteButton="True" />
             </Columns>
         </asp:GridView>
+        -->
+        <asp:Button ID="btnRemoveItem" runat="server" Text="Remove Item" 
+            onclick="btnRemoveItem_Click" />
+        <asp:ListBox ID="lbInventory" runat="server" DataSourceID="SqlDataSource1" 
+            DataTextField="ItemName" DataValueField="ItemPrice" Height="113px" 
+            Width="517px"></asp:ListBox>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
             ConnectionString="<%$ ConnectionStrings:DBConnection %>" 
             SelectCommand="SELECT [ItemName], [ItemDesc], [ItemProcessingTime], [ItemPrice] FROM [Item] WHERE ([VendorID] = @VendorID)">
