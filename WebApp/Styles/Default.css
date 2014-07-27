@@ -125,4 +125,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5577aa', end
     border-right: 1px solid #024;
     border-bottom: 1px solid #024;
 }
+.background img
+{
+    width: 100%!important;
+}
     

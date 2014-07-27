@@ -70,3 +70,7 @@
     min-width: 0px;
     padding: 5px;   
 }
+.background img
+{
+    width: 100%!important;
+}
