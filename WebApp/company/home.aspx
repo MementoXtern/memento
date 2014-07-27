@@ -7,6 +7,7 @@
         $(document).ready(function () {
             var current_event = null;
             var event_visual = null;
+            var new_title = null;
             var completedColor = 'red';
             $('#calendar').fullCalendar({
                 events: {
@@ -23,28 +24,33 @@
                     console.log('clicked: ', JSON.stringify(event));
                     current_event = event;
                     event_visual = this;
-                    $('#eventInfoTitle').html('Event: ' + event.title);
-                    $('#eventInfoOrigin').html('Ordered by: ' + event.originCompany);
-                    $('#eventInfoDay').html('Day: ' + new Date(event.start.format()));
-                    $('#eventInfoLocation').html('Location: ' + event.location);
-                    $('#eventInfoItem').html('Item: ' + event.item);
-                    $('#eventInfoQuantity').html('Quantity: ' + event.quantity);
                     $('#MementoEvent').modal('show');
                 }
             });
 
             $('#btnCreateMemento').click(function () {
-                $('#MementoEvent').modal('show')
+                current_event = null;
+                $('#MementoEvent').modal('show');
             });
 
             $('#btnAddCustomObject').click(function () {
-                $('#MementoEvent').modal('hide')
-                $('#MementoCustomObject').modal('show')
+                new_title = $('#MainContent_txtEventName').val();
+                $('#MementoEvent').modal('hide');
+                $('#MementoCustomObject').modal('show');
             });
 
             $('#btnSaveMemento').click(function () {
-                $('#MementoCustomObject').modal('hide')
-                $('#MementoHasBeenSaved').modal('show')
+                $('#MementoCustomObject').modal('hide');
+                $('#MementoHasBeenSaved').modal('show');
+                if (current_event) {
+                    current_event.title = new_title;
+                    $('#calendar').fullCalendar('updateEvent', current_event);
+                }
+                else {
+                    var new_event = {};
+                    new_event.title = new_title;
+                    $('#calendar').fullCalendar('addEventSource', [new_event]);
+                }
                 //Something here to actually write Memento to DB.
             });
 
@@ -76,7 +82,7 @@
 
     <div id="calendar"></div>
 
-    <button type="button" id="btnCreateMemento">Create Memento</button>
+    <button type="button" id="btnCreateMemento" class="btn btn-primary">Create Memento</button>
 
     <div class="modal fade" id="MementoEvent">
   <div class="modal-dialog">
