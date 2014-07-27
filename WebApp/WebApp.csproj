@@ -64,6 +64,8 @@
     <Content Include="Assets\login_bg.jpg" />
     <Content Include="CreateAccount.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Assets\oooops.jpg" />
+    <Content Include="oooops.aspx" />
     <Content Include="Plugins\fullcalendar\changelog.txt" />
     <Content Include="Plugins\fullcalendar\demos\agenda-views.html" />
     <Content Include="Plugins\fullcalendar\demos\basic-views.html" />
@@ -147,6 +149,7 @@
     <Content Include="Plugins\fullcalendar\lib\moment.min.js" />
     <Content Include="Plugins\fullcalendar\license.txt" />
     <Content Include="RequestKey.aspx" />
+    <Content Include="redirect.aspx" />
     <Content Include="Styles\bootstrap\css\bootstrap-theme.css" />
     <Content Include="Styles\bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="Styles\bootstrap\css\bootstrap.css" />
@@ -202,6 +205,20 @@
     </Compile>
     <Compile Include="RequestKey.aspx.designer.cs">
       <DependentUpon>RequestKey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oooops.aspx.cs">
+      <DependentUpon>oooops.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oooops.aspx.designer.cs">
+      <DependentUpon>oooops.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="redirect.aspx.cs">
+      <DependentUpon>redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="redirect.aspx.designer.cs">
+      <DependentUpon>redirect.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

@@ -14,23 +14,12 @@ namespace WebApp
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["AccountId"] = 5;
-            Session["AccountTypeId"] = 2;
-
-            if (Session["AccountId"] != null && Session["AccountTypeId"] != null)
-            {
-                SetMenu();
-            }
-            else
-            {
-                Response.Redirect("Default.aspx");
-            }
+            SetMenu();
         }
 
         private void SetMenu()
         {
-            int accountId = (int)Session["AccountId"];
-            int typeId = (int)Session["AccountTypeId"];
+            int typeId = Session["AccountTypeId"] != null ? (int)Session["AccountTypeId"] : 0;
 
             _menuItems = MenuItem.GetMenuItems(typeId);
         }

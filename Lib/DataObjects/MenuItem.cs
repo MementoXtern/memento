@@ -5,6 +5,7 @@ using System.Text;
 using Lib.BusinessObjects;
 using Lib.Utilities;
 using Lib.Utilities.DataAccess;
+using System.Data;
 
 namespace Lib.DataObjects
 {
@@ -20,10 +21,10 @@ namespace Lib.DataObjects
         {
             List<MenuItemObject> menuItems = new List<MenuItemObject>();
 
+            //DataTable dt = null;
             //Query query = new Query();
             //query.AddParameter("@AccountTypeId", testId);
-
-           // DBManager.Execute(query, ref xml);
+            //DBManager.Execute(query, ref dt);
             menuItems.Add(new MenuItemObject { Url = "boobies.aspx", Name = "BOOBIES" });
             menuItems.Add(new MenuItemObject { Url = "titties.aspx", Name = "GIGANTIC TITS" });
 

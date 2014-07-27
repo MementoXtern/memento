@@ -8,8 +8,6 @@ namespace Lib.BusinessObjects
     public class MenuItemObject
     {
         public string Url { get; set; }
-
         public string Name { get; set; }
-
     }
 }
