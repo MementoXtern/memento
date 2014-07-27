@@ -49,7 +49,7 @@
 
        
     </script>
-    <button type="button" class="btn btn-primary" id="manageInvBtn">Manage Inventory</button>
+    <button type="button" class="btn btn-primary" id="syncBtn">Sync</button>
     <div id="calendar"></div>
     
     <div class="modal fade" >
