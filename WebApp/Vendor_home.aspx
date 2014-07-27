@@ -6,33 +6,36 @@
         $(document).ready(function () {
             var current_event = null;
             var event_visual = null;
+            var completedColor = 'red';
             $('#calendar').fullCalendar({
                 events: {
-                    url: 'https://www.google.com/calendar/feeds/rfptn6bo41m04d2khbjnm4eedk%40group.calendar.google.com/public/basic'
+                    url: '/webservice/webservice.asmx/GetEvents',
+                    type: 'POST'
                 },
                 dayClick: function (date, jsEvent, view) {
                     console.log('clicked: ', date.format());
                 },
+                eventMouseOver: function (event, jsEvent, view) {
+
+                },
                 eventClick: function (event, jsEvent, view) {
-                    if (event.url) { //return false so it doesn't navigate to google calendar event page
-                        console.log('clicked: ', JSON.stringify(event));
-                        current_event = event;
-                        event_visual = this;
-                        $('#eventInfoTitle').html('Event: ' + event.title);
-                        $('#eventInfoOrigin').html('Ordered by: ' + event.origin);
-                        $('#eventInfoDay').html('Day: ' + event.start);
-                        $('#eventInfoLocation').html('Location: ' + event.location);
-                        $('#eventInfoItem').html('Item: ' + event.title); //event.item
-                        $('#eventInfoQuantity').html('Quantity: ' + event.title); //event.quantity
-                        $('.fade').modal('show');
-                        return false;
-                    }
+                    console.log('clicked: ', JSON.stringify(event));
+                    current_event = event;
+                    event_visual = this;
+                    $('#eventInfoTitle').html('Event: ' + event.title);
+                    $('#eventInfoOrigin').html('Ordered by: ' + event.originCompany);
+                    $('#eventInfoDay').html('Day: ' + new Date(event.start.format()));
+                    $('#eventInfoLocation').html('Location: ' + event.location);
+                    $('#eventInfoItem').html('Item: ' + event.item);
+                    $('#eventInfoQuantity').html('Quantity: ' + event.quantity);
+                    $('.fade').modal('show');
                 }
             });
 
             $('#completeEventBtn').click(function () {
                 console.log('complete pushed for event: ' + current_event.title);
-                $(event_visual).css('border-color', 'red');
+                $(event_visual).css('border-color', completedColor);
+                console.log($(event_visual).css('border-color'));
             });
 
             $('#modalClose').click(function () {
