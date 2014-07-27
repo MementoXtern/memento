@@ -5,7 +5,9 @@
 <head runat="server">
     <title>
         <%: Page.Title %> - Memento</title>
-    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Default.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/Login.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
     <link href="~/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="Plugins/fullcalendar/fullcalendar.css" rel="Stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
@@ -20,11 +22,6 @@
     <form runat="server">
     <div class="page">
         <div class="header">
-            <div class="title">
-                <h1>
-                    Template Application
-                </h1>
-            </div>
             <div class="loginDisplay">
             </div>
             <div class="clear hideSkiplink">
@@ -38,6 +35,12 @@
                 </div>
                 <div style="clear: left;">
                 </div>
+            </div>
+        </div>
+         <div class='logo'>
+            <img src='/Assets/logo.png' width=80/>
+            <div class="title">
+                    Memento
             </div>
         </div>
         <div class="main">

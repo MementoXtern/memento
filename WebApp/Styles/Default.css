@@ -1,0 +1,80 @@
+﻿body{
+    background: url('/Assets/login_bg_01.jpg');
+}
+.header {
+    padding: 5px;  
+}
+
+.header .clear {
+    display: none;
+}
+.logo {
+    margin-top: 60px;
+    text-align: center;
+}
+.logo .title {
+    display: inline-block;
+    color: white;
+    font-family: "Gloria Hallelujah";
+    font-size: 28px;
+    margin-left: 5px;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    margin: 60px auto;
+}
+.splash {
+    background: rgba(0,0,0,0.1);
+    padding: 10px 40px;
+    border-radius: 15px;
+    text-align: center;  
+    max-width: 600px;
+    margin: auto;
+}
+.main h2.title {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: Garamond;
+}
+.main p {
+    padding: 10px 0px;
+}
+.main p.splash-text {
+    color: #ccc;
+    font-size: 14px;
+    text-shadow: 0px 1px 1px #333;
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+.main .inputs {
+    text-align: center;
+}
+.main .inputs input {
+    padding: 10px 20px;
+    min-width: 35%;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    border-right: 1px solid darkred;
+    border-bottom: 1px solid darkred;
+    margin: 0px 10px;
+    outline: none;
+    
+    font-family: calibri;
+    font-size: 16px;
+    text-transform: Capitalize;
+    
+background: #ee0000; /* Old browsers */
+background: -moz-linear-gradient(top, #ee0000 0%, #d0000d 99%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ee0000), color-stop(99%,#d0000d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ee0000 0%,#d0000d 99%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ee0000 0%,#d0000d 99%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ee0000 0%,#d0000d 99%); /* IE10+ */
+background: linear-gradient(to bottom, #ee0000 0%,#d0000d 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee0000', endColorstr='#d0000d',GradientType=0 ); /* IE6-9 */
+}
+
+    
