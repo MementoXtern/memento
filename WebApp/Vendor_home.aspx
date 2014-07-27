@@ -13,6 +13,12 @@
                     url: '/webservice/webservice.asmx/GetEvents',
                     type: 'POST'
                 },
+                eventRender: function (event, element) {
+                    console.log('Element being rendered: ' + JSON.stringify(event));
+                    if (event.isComplete) {
+                        $(element).css('background-color', completedColor);
+                    }
+                },
                 dayClick: function (date, jsEvent, view) {
                     console.log('clicked: ', date.format());
                 },
@@ -34,7 +40,6 @@
             });
 
             $('#completeEventBtn').click(function () {
-                console.log('complete pushed for event: ' + current_event.title);
                 if ($(event_visual).css('background-color') === incompleteColor) {
                     $(event_visual).css('background-color', completedColor);
                     current_event.isComplete = true;
@@ -44,16 +49,17 @@
                     current_event.isComplete = false;
                 }
 
+
+            });
+
+            $('#modalSave').click(function () { //Send updated event to db
+                var id = current_event.id;
+                console.log('posting: ' + current_event.isComplete);
                 $.ajax({
                     url: "/webservice/webservice.asmx/CompleteEvent",
                     type: "POST",
                     data: { eventId: current_event.id, isComplete: current_event.isComplete }
                 });
-            });
-
-            $('#modalSave').click(function () { //Send updated event to db
-                var id = current_event.id;
-                console.log('Id: ' + id);
             });
         });
 
