@@ -4,10 +4,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class='login'>
         <h2 class='title'>Login</h2>
-        <p class='splash-text username field'>
+        <p class='username field'>
             <asp:TextBox ID="txtUsername" runat="server" value='Username'></asp:TextBox>
         </p>
-        <p class='splash-text password field'>
+        <p class='password field'>
             <asp:TextBox ID="txtPassword" runat="server" value='Password'></asp:TextBox>
         </p>
         <p class='inputs'>
