@@ -162,6 +162,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Styles\Login.css" />
+    <Content Include="hr\CreateHRUser.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -246,7 +247,13 @@
     </Compile>
     <Compile Include="vendor\home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
+	</Compile>
+    <Compile Include="hr\CreateHRUser.aspx.cs">
+      <DependentUpon>CreateHRUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hr\CreateHRUser.aspx.designer.cs">
+      <DependentUpon>CreateHRUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="vendor\home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
