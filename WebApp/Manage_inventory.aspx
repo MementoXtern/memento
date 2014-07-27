@@ -41,12 +41,11 @@
             <Columns>
                 <asp:BoundField DataField="ItemName" HeaderText="ItemName" 
                     SortExpression="ItemName" />
-                <asp:BoundField DataField="ItemDesc" HeaderText="ItemDesc" 
-                    SortExpression="ItemDesc" />
                 <asp:BoundField DataField="ItemProcessingTime" HeaderText="ItemProcessingTime" 
                     SortExpression="ItemProcessingTime" />
                 <asp:BoundField DataField="ItemPrice" HeaderText="ItemPrice" 
                     SortExpression="ItemPrice" />
+                <asp:CommandField ButtonType="Button" ShowDeleteButton="True" />
             </Columns>
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
