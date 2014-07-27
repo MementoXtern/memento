@@ -9,7 +9,10 @@ namespace Lib.BusinessObjects
     {
         public int id { get; set; }
         public string title { get; set; }
+        public string originCompany { get; set; }
         public string start { get; set; }
-        public string description { get; set; }
+        public string location { get; set; }
+        public string item { get; set; }
+        public int quantity { get; set; }
     }
 }
