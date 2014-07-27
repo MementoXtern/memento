@@ -67,7 +67,7 @@
 .main .inputs {
     text-align: center;
 }
-.main .inputs input {
+.inputs input {
     padding: 10px 20px;
     width: 35%;
     min-width: 200px;

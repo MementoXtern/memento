@@ -19,7 +19,7 @@
         type='text/css'>
     <link href="~/Styles/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="Plugins/fullcalendar/fullcalendar.css" rel="Stylesheet" type="text/css" />
-    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="HeadContent2" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
@@ -47,16 +47,19 @@
                                     <%= _menuItems[i].Name %></a></li>
                             <% } %>
                         </ul>
+                        <p class='inputs'>
+                            <input type="button" class="red-gradient" value="Log out" onclick="javascript:top.location.href='/'" />
+                        </p>
                     </div>
                     <div style="clear: left;">
                     </div>
                 </div>
             </div>
             <div class="main">
-                <asp:Literal ID="litError" runat="server"></asp:Literal>
-                <asp:Literal ID="litWarning" runat="server"></asp:Literal>
-                <asp:Literal ID="litMessage" runat="server"></asp:Literal>
-                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                <asp:Literal ID="litError2" runat="server"></asp:Literal>
+                <asp:Literal ID="litWarning2" runat="server"></asp:Literal>
+                <asp:Literal ID="litMessage2" runat="server"></asp:Literal>
+                <asp:ContentPlaceHolder ID="MainContent2" runat="server" />
             </div>
             <div class="clear">
             </div>

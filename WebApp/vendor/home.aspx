@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Vendor Home" Language="C#" MasterPageFile="~/LoggedIn.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="WebApp.vendor.Home" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent2" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent2" runat="server">
     <script>
         $(document).ready(function () {
             var current_event = null;
